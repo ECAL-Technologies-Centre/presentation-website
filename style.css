@@ -1,7 +1,114 @@
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Renens-BoldItalic.woff') format('woff'),
+        url('assets/fonts/Renens-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-Light.woff2') format('woff2'),
+        url('assets/fonts/Renens-Light.woff') format('woff'),
+        url('assets/fonts/Renens-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-Bold.woff2') format('woff2'),
+        url('assets/fonts/Renens-Bold.woff') format('woff'),
+        url('assets/fonts/Renens-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-Medium.woff2') format('woff2'),
+        url('assets/fonts/Renens-Medium.woff') format('woff'),
+        url('assets/fonts/Renens-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Renens-LightItalic.woff') format('woff'),
+        url('assets/fonts/Renens-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Renens';
+    src: url('assets/fonts/Renens-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/Renens-MediumItalic.woff') format('woff'),
+        url('assets/fonts/Renens-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) { 
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
 html, body {
-    font-size: 25px;
-    background-color: #eff0ef;
+    font-size: 30px;
+    background-color: white;
     z-index: 1;
+    font-family: 'Renens', sans-serif;
+}
+
+div {
+    z-index: 10;
+}
+
+.feature-text {
+    font-size: 1.67rem;
+    line-height: 1.73rem; 
+    /* font-size: 50px;
+    line-height: 52px; */
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.07rem;
+    /* medium */
+    color: #727272;
+}
+
+.section-title {
+    font-size: 1rem;
+    line-height: 1.07rem;
+    text-transform: uppercase;
+    /* medium */
+}
+
+.caption {
+    font-size: 0.47rem;
+    line-height: 0.53rem;    
+    text-transform: uppercase;
+}
+
+.caption--project {
+    color: #727272;
 }
 
 .title {
@@ -11,8 +118,9 @@ html, body {
     transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
-    font-size: 4rem;
-    z-index: 1;
+    font-size: 3.33rem;
+    z-index: 5;
+    font-weight: bold;
 }
 
 .subtitle {
@@ -52,16 +160,6 @@ figcaption  {
     width: 100%;
 }
 
-.text {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    z-index: 2;
-    position: relative;
-}
-
-.text--small {
-    font-size: 1.5rem;
-}
 
 .text-center {
     text-align: center;
@@ -97,6 +195,17 @@ figcaption  {
 .feature__fullscreen {
     height: 100vh;
     position: relative;
+    z-index: 1;
+}
+
+.feature__subtext {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+
 }
 
 .feature > iframe {
@@ -116,3 +225,9 @@ figcaption  {
     transform: translate(-50%,-50%);
 }
 
+.hamburger {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 200;
+}
