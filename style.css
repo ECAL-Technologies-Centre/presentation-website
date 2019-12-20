@@ -74,10 +74,20 @@ html, body {
     background-color: white;
     z-index: 1;
     font-family: 'Renens', sans-serif;
+    color: black;
 }
 
 div {
     z-index: 10;
+}
+
+hr {
+    height: 1px;
+    position: relative;
+    background-color: black;
+    z-index: 200;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .feature-text {
@@ -91,7 +101,6 @@ div {
     font-size: 1rem;
     line-height: 1.07rem;
     /* medium */
-    color: #727272;
 }
 
 .section-title {
@@ -105,6 +114,7 @@ div {
     font-size: 0.47rem;
     line-height: 0.53rem;    
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .caption--project {
@@ -127,7 +137,6 @@ div {
     text-transform: uppercase;   
 }
 
-
 .hover-info {
     filter: blur(0px);
     transition-duration: 0.4s;
@@ -143,17 +152,16 @@ div {
 
 figure {
     position: relative;
+    margin-bottom: 0px;
 }
 
-figcaption  {
-    position: absolute;
+.figcaption  {
+    /* position: absolute;
     left: 0;
     top: 0;
     opacity: 0;
-    transition-duration: 0.4s;
+    transition-duration: 0.4s; */
 }
-
-
 
 .spacer {
     height: 4rem;
@@ -167,6 +175,20 @@ figcaption  {
 
 .full-width {
     width: 100%;
+}
+
+.logos {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 75px !important;
+    margin-bottom: 60px !important;
+}
+
+.logo {
+    /* max-width: 3rem; */
+    max-height: 2rem;
 }
 
 .feature {
@@ -230,4 +252,9 @@ figcaption  {
     top: 1rem;
     left: 1rem;
     z-index: 200;
+}
+
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
 }
