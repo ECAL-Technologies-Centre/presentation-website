@@ -117,7 +117,7 @@ hr {
     margin-top: 10px;
 }
 
-.caption__code {
+.caption__code {    
     margin-top: 0px;
 }
 
@@ -269,7 +269,8 @@ figure {
     z-index: 200;
 }
 
-.container-fluid {
+.container-fluid--margins {
     padding-left: 30px;
     padding-right: 30px;
 }
+
