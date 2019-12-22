@@ -4,14 +4,14 @@
     <title>ECALTECH CENTRE</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ecaltech-hamburger.css">
     <!-- <link rel="stylesheet" href="css/hamburgers.min.css"> -->
     <link rel="stylesheet" href="style.css">
 
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>  
@@ -24,16 +24,17 @@
         </span>
       </button>
       
-      <a href="#home">ECALTECH Centre</a>
-      <span class="spacer"></span>
-
+      <a href="#home" class="d-none d-md-block">ECALTECH Centre</a>
+      <span class="spacer d-none d-md-block"></span>
       <a href="#mission">Mission</a>
-      <a href="#technologies">Technologies</a>
+      <a href="#technologies" class="d-none d-md-block">Technologies</a>
+      <a href="#technologies" class="d-md-none">Tech</a>
+
       <a href="#support">Support</a>
       <a href="#contact">Contact</a>
     </nav>
     
-    <p class="title">ECALTECH&nbsp;CENTRE</p>
+    <p class="title">ECALTECH CENTRE</p>
 
     <header class="container-fluid" id="home">
       <div class="row">
@@ -49,7 +50,7 @@
           <div class="spacer"></div>
         </div>
         <div class="row">
-          <div class="offset-1 col-10">
+          <div class="col-12 offset-md-1 col-md-10">
             <p class="text-center feature-text">ECALTECH Centre is a place for Deep Learning (AI), augmented reality, virtual or mixed reality, the use of medical sensors, Motion tracking, Photogrammetry, access to the platforms of main smartphone providers and touch tablet applications, home automation, robotics, mapping software etc.</p>
           </div>
         </div>
@@ -75,11 +76,11 @@
 
         <hr>
         <div class="row">
-          <div class="col-4">
-            <p class="section-title" >OUR MISSION</p>
+          <div class="col-12 col-md-4">
+            <p class="section-title" >Our Mission</p>
           </div>
 
-          <div class="col-8">
+          <div class="col-12 col-md-8">
             <p class="feature-text">Promote and support technology learning through centralized access to necessary equipment and the presence of experts.</p>
             <p class="feature-text">Combining know-how and increasing the quality of results while by reducing production time for related projects with technologies.</p>
             <p class="feature-text">Ensure the sustainability of the achievements by setting up a physical and digital archive in the form of a technology library.</p>
@@ -93,7 +94,7 @@
             <p class="section-title">Featured technologies</p>
           </div>
           
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <figure>
               <img src="assets/projects/photogrammetry.jpg" alt="Photogrammetry" class="hover-info full-width caption caption--project ">
               <figcaption class="caption">[PM001]</figcaption>
@@ -105,28 +106,28 @@
             </figure>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <figure>
               <img src="assets/projects/abb.jpg" alt="Robot" class="full-width caption caption--project">
               <figcaption class="caption">[RB001]</figcaption>
             </figure>
           </div>
         
-          <div class="offset-4 col-8">
+          <div class="col-12 offset-md-4 col-md-8">
             <figure>
               <img src="assets/projects/app.jpg" alt="App" class="full-width caption caption--project">
               <figcaption class="caption">[APP001]</figcaption>
             </figure>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <figure>
               <img src="assets/projects/broom.jpg" alt="App" class="full-width caption caption--project">
               <figcaption class="caption">[TI001]</figcaption>
             </figure>
           </div>
 
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <figure>
               <img src="assets/projects/hands.jpg" alt="Tangible" class="full-width caption caption--project">
               <figcaption class="caption">[VR/TI001]</figcaption>
@@ -138,11 +139,11 @@
         <hr>
 
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <p class="section-title">Our first partners</p>
           </div>
 
-          <div class="col-8">
+          <div class="col-12 col-md-8">
             <p class="text">As a result, a lot of energy will be deployed to promote and test these technologies. Thanks to numerous experiments and research within the school, we have found that students innovate more quickly when a context allows them to reject the traditional uses of these technologies.</p>
             <div class="logos">
               <img src="assets/logos/logo-mindmaze.svg" class="logo"/>
@@ -155,11 +156,11 @@
         <div id="support" class="aligner"></div>
         <hr>
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <p class="section-title">Funding</p>
           </div>
 
-          <div class="col-8">
+          <div class="col-12 col-md-8">
             <p class="text">As scholars and innovators, we build on the contributions of those who came before us, and the generosity of our alumni and friends extends this tradition. Every gift to the Media Lab impacts our students, faculty, and our greatest innovations.</p>
             <p class="text">If you wish to fund us, please get in touch at <a href="mailto:tech@ecal.ch">tech@ecal.ch</a></p>
           </div>
@@ -178,28 +179,29 @@
         <div id="contact" class="aligner"></div>
         <hr>
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <p class="section-title">Contact</p>
           </div>
 
-          <div class="col-8">
+          <div class="col-12 col-md-4">
             <p class="text">ECALTECH Centre is part of<br>ECAL/University of Art & Design Lausanne<br><br>For any inquiries related to ECALTECH,<br> please get in touch at: <a href="mailto:tech@ecal.ch">tech@ecal.ch</a></p>
           </div>
         </div>
 
         <hr>
         <div class="row">
-          <div class="col-1">
+          <div class="col-2 col-md-1">
             <a href="http://ecal.ch"><img src="assets/logos/logo-ecal.svg" class="full-width"/></a>
           </div>
 
-          <div class="offset-3 col-4">
+          <div class="col-6 col-md-4 offset-md-3">
             <p class="caption">ECAL/University of Art & design, Lausanne<br>Avenue du Temple 5, CH-1020 Renens</p>
           </div>
 
-          <div class="col-4">
+          <div class="col-4 col-md-4">
             <p class="caption">© 2020 ECAL<br>All Rights Reserved.</p>
           </div>
+
         </div>
       </main>
   </body>
