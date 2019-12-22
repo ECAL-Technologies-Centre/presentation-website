@@ -81,6 +81,71 @@ div {
     z-index: 10;
 }
 
+nav {
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    transition-duration: 0.4s;
+
+}
+
+nav.is-active {
+    background-color: white;
+}
+
+.aligner {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -10px;
+    left: 0;
+}
+
+nav > a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-left: 0.26rem;
+    margin-right: 0.26rem;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+nav.is-active > a {
+    opacity: 1;
+}
+
+
+nav > a:last-of-type {
+    margin-right: 1rem;
+}
+
+nav > a:hover {
+    color:black;
+}
+
+.spacer {
+    flex: 10;
+}
+
+.hamburger {
+    /* position: absolute; */
+    /* top: 1rem;
+    left: 1rem; */
+    margin-top: 2px;
+    line-height: 0;
+    z-index: 200;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
 hr {
     height: 1px;
     position: relative;
@@ -266,12 +331,7 @@ figure {
     transform: translate(-50%,-50%);
 }
 
-.hamburger {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 200;
-}
+
 
 .container-fluid--margins {
     padding-left: 30px;
