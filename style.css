@@ -66,23 +66,29 @@ html, body {
     }    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     html, body {
         font-size: 15px;
+    }    
+}
+
+@media (min-width: 768px) {
+    html, body {
+        font-size: 30px;
     }   
 }
 
-@media (max-width: 992px) { 
+/* @media (max-width: 992px) { 
     html, body {
-        font-size: 15px;
+        font-size: 30px;
     }   
 }
 
 @media (max-width: 1200px) {
     html, body {
-        font-size: 15px;
-    }   
-}
+        font-size: 30px;
+    }    
+}*/
 
 
 
@@ -120,7 +126,7 @@ nav.is-active {
 nav > a {
     color: black;
     text-transform: uppercase;
-    font-size: max(12px, 0.5rem);
+    font-size: 15px;
     margin-left: 0.26rem;
     margin-right: 0.26rem;
     opacity: 0;
@@ -220,7 +226,7 @@ hr {
     z-index: 5;
     font-weight: bold;
     text-align: center;
-    width: 100%;
+    width: 85%;
 }
 
 .subtitle {
