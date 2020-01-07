@@ -58,6 +58,7 @@ html, body {
     z-index: 1;
     font-family: 'Renens', sans-serif;
     color: black;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 @media (max-width: 576px) { 
