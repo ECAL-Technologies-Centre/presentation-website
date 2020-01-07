@@ -239,15 +239,15 @@ hr {
     transition-duration: 0.4s;
 }
 
-.hover-info:hover {
+/* .hover-info:hover {
     filter: blur(1px);
     opacity: 0.4;
-}
+} */
 
-.hover-info:hover ~ .caption--overlay {
+/* .hover-info:hover ~ .caption--overlay {
     opacity: 1;
     display: visible;
-}
+} */
 
 figure {
     position: relative;
@@ -265,8 +265,25 @@ figure {
     padding-left: 10px;
     /* display: none; */
     z-index: 200;
+    opacity: 0.0001;
+    width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+.caption--overlay {
     opacity: 0;
-    pointer-events: none;
+    display: visible;
+}
+
+.caption--overlay:hover {
+    opacity: 1;
+    display: visible;
+}
+
+.caption--overlay:hover ~ .caption--project {
+    filter: blur(1px);
+    opacity: 0.4;
 }
 
 .caption--overlay > .caption {
@@ -298,7 +315,7 @@ figure {
     align-content: space-around;
     justify-content: space-between;
     width: 100%;
-    margin-top: 2.5rem !important;
+    margin-top: 1rem !important;
     margin-bottom: 2rem !important;
 }
 
