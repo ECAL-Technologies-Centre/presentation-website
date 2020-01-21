@@ -228,6 +228,7 @@ hr {
     font-weight: bold;
     text-align: center;
     width: 85%;
+    -webkit-transform: translate3d(-50%,-50%,0);
 }
 
 .subtitle {
