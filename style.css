@@ -58,7 +58,7 @@ html, body {
     z-index: 1;
     font-family: 'Renens', sans-serif;
     color: black;
-    -webkit-transform: translate3d(0,0,0);
+    /* -webkit-transform: translate3d(0,0,0); */
 }
 
 @media (max-width: 576px) { 
@@ -228,7 +228,6 @@ hr {
     font-weight: bold;
     text-align: center;
     width: 85%;
-    -webkit-transform: translate3d(-50%,-50%,0);
 }
 
 .subtitle {
